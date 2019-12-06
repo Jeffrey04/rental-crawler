@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  crawler:
+    image: jeffrey04/rental-crawler/edgeprop
+    volumes:
+      - './crawler-data:/var/lib/crawler'
+    environment:
+      QUERY_STATE: Kuala Lumpur
+      QUERY_LISTING_TYPE: rent
+      REST_SEC_MIN: 7
+      REST_SEC_MAX: 9
