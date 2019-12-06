@@ -6,9 +6,12 @@ authors = ["Jeffrey04 <mycyberpet@yahoo.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
+requests = "^2.22"
+ujson = "^1.35"
 
 [tool.poetry.dev-dependencies]
-
+black = {version = "^18.3-alpha.0", allows-prereleases = true}
+prospector = "^1.1"
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
